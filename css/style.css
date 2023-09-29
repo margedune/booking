@@ -273,8 +273,8 @@ a {
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Pour répartir les éléments horizontalement */
-    align-content: space-between; /* Pour répartir les éléments verticalement */
+    justify-content: space-around; /* Pour répartir les éléments horizontalement */
+    align-content: space-around; /* Pour répartir les éléments verticalement */
     list-style: none;
     padding: 0;
     gap: 20px;
