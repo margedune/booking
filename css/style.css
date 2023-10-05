@@ -66,7 +66,7 @@ a {
 }
 
 .topnav a {
-    padding-top: 10px;
+    padding-top: 30px;
     float: left;
 }
 
@@ -187,17 +187,37 @@ a {
     align-items: flex-start;
     border-radius: 25px;
     border: 2px solid var(--grey-tint-2, #D9D9D9);
-    transition: transform 0.4s; /*Ajoute une transition pour une animation en douceur */
+    transition-property: transform;
+    transition-duration: 0.4s; /*Ajoute une transition pour une animation*/
 } 
 
-.search-filter-item :hover
+.search-filter-item:hover
 {
     background-color: var(--Blue, #DEEBFF);
-    transform: scale(1.2); /* Au survol, agrandissez le bouton à 1.2 fois sa taille d'origine */
+    transform: scale(1.2);  /*Au survol, agrandissez le bouton à 1.2 fois sa taille d'origine */
 }
 
-.search-filter-item svg {
+.search-filter-item img {
     padding: 10px 0px 10px 10px;
+}
+
+.info {
+    display: flex;
+}
+
+.info-circle {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    border: 1px solid #D9D9D9;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.info p {
+    margin: 5px 0px 0px 10px;
 }
 
 .search-filter-item label {
@@ -274,8 +294,8 @@ a {
 .hebergements-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; /* Pour répartir les éléments horizontalement */
-    align-content: space-between; /* Pour répartir les éléments verticalement */
+    justify-content: space-around; /* Pour répartir les éléments horizontalement */
+    align-content: space-around; /* Pour répartir les éléments verticalement */
     list-style: none;
     padding: 0;
     gap: 20px;
@@ -314,9 +334,7 @@ a {
     line-height: normal;
     padding-top: 3px;
 }
-.logo {
 
-}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
