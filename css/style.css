@@ -301,9 +301,6 @@ a {
     gap: 20px;
 }
 
-/*.hebergements-cards > * {
-    width: calc(100% / 3) - 20px;
-}*/
 
 .hebergements-cards .card {
     width: 200px;
@@ -333,6 +330,43 @@ a {
     font-weight: 400;
     line-height: normal;
     padding-top: 3px;
+}
+
+/****** Activités ***********/
+.activites-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Pour répartir les éléments horizontalement */
+    align-content: space-around; /* Pour répartir les éléments verticalement */
+    list-style: none;
+    padding: 0;
+    gap: 10px;
+}
+
+.activites-cards img {
+    width: 260px;
+    height: 344px;
+    flex-shrink: 0;
+    border-radius: 20px 20px 0px 0px;
+}
+
+/****** Footer ***********/
+.text {
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400px;
+    line-height: normal;
+}
+
+.text-bas-de-page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Pour répartir les éléments horizontalement */
+    align-content: space-around; /* Pour répartir les éléments verticalement */
+    background: var(--Grey, #F2F2F2);
+    margin-top: 50px;
+    padding-top: 45px;
 }
 
 
