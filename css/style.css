@@ -250,8 +250,14 @@ a {
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    display: flex;
+    
+    flex-direction: column;
 }
-
+.populaires-cards {
+    display: flex;
+    flex-direction: column;
+}
 .populaires-title {
     display: flex;
     justify-content: space-between;
@@ -261,6 +267,7 @@ a {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+    min-width: 100%;
 }
 
 .populaires-cards img {
