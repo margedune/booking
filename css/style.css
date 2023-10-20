@@ -174,6 +174,14 @@ a {
     background: var(--Blue, #0065FC);
 }
 
+.search-location button .fa-solid {
+    color: var(--White, #FFF);
+}
+
+.search-location label {
+    color: var(--White, #FFF);
+}
+
 .search-filter {
     display: flex;
     align-items: center;
@@ -244,20 +252,16 @@ a {
 
 /****** Hebergements ***********/
 .hebergements {
+    order: 1;
     width: 65%;
 }
 
 /****** Populaires ***********/
 .populaires {
+    order: 2;
     width: 32%;
-    display: flex;
-    
-    flex-direction: column;
 }
-.populaires-cards {
-    display: flex;
-    flex-direction: column;
-}
+
 .populaires-title {
     display: flex;
     justify-content: space-between;
@@ -387,7 +391,18 @@ a {
 
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
-@media (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+    .search-filter {
+        width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .search-filter-item {
+        width: 15%;
+    }
+
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -426,25 +441,46 @@ a {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media screen and (max-width: 767.98px) {
+    .search-location button label{
+       display: none;
+    }
+
+    .search-filter {
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .search-filter span {
+        width: 100%;
+    }
+
+    .search-filter-item {
+        width: 35%;
+    }
+      
+
     /* ... */
     .hebergements-and-populaires {
         flex-direction: column;
     }
 
     .hebergements {
+        margin-top: 50px;
+        order: 2;
         width: 100%;
     }
 
     .populaires {
+        order: 1;
         width: 100%;
         margin-top: 50px;
     }
 
     .populaires-cards {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        display: block;
     }
 
     .populaires-cards a {
