@@ -404,6 +404,11 @@ a {
         width: 100%;
     }
 
+    .hebergements-cards .card {
+        width: 170px;
+        height: 199px;
+    }
+
     .populaires {
         width: 100%;
         margin-top: 50px;
